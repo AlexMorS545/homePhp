@@ -1,0 +1,38 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1200px;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+}
+.title {
+    text-align: center;
+}
+.image-wrp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.img-link {
+    display: block;
+    margin-bottom: 30px;
+    flex: 0 1 30%;
+}
+.img-link:hover .photo {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 3px #a1a0a0;
+}
+.photo {
+    width: 100%;
+}
+.img-wrp {
+    width: 1000px;
+}
+.full-img {
+    display: block;
+    width: 100%;
+}
+form {
+    text-align: center;
+    margin-bottom: 100px;
+}

@@ -5,13 +5,6 @@ $cities = [
   "Рязанская область" => ["Рязань", "Михайлов", "Кораблино", "Павелец", "Кадом"]
 ];
 foreach ($cities as $region => $city) {
-  echo "$region: <br>";
-  if (is_array($city)) {
-    $c = implode(", ", $city);
-    for($i = 0; $i < count($city); $i++) {
-      if($i == (count($city) - 1)){
-        echo "$c. <br>";
-      }
-    }
-  }
+  $str = implode(', ', $city). ".";
+  echo "$region: <br> $str <br>";
 }
