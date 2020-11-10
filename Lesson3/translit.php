@@ -31,11 +31,11 @@ function translit($text) {
 }
 echo translit("Как здорово, что все мы здесь сегодня собрались!<br>");
 
-function traslited($string) {
+function traslit($string) {
   $newStr = transliterator_transliterate("Russian-Latin/BGN", $string);
   $newStr = str_replace(" ", "_", $newStr);
   echo $newStr;
 }
-traslited("Здорово, когда есть такая хорошая функция!" );
+traslit("Здорово, когда есть такая хорошая функция!" );
 
 
