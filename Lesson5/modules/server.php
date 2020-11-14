@@ -1,17 +1,11 @@
 <?php
-//$salt = date("YmdHis");
-//$path = "images/".$_FILES['photo']['name']."_$salt";
-//$file = move_uploaded_file($_FILES['photo']['tmp_name'], $path);
-//if($file) {
-//  header("Location: index.php");
-//}
+
 function translited($string) {
   $newStr = transliterator_transliterate("Russian-Latin/BGN", $string);
   return str_replace(" ", "_", $newStr);
 }
 
-function changeImage($h, $w, $src, $newsrc, $type)
-{
+function changeImage($h, $w, $src, $newsrc, $type) {
   $newimg = imagecreatetruecolor($h, $w);
   switch ($type) {
     case 'jpeg':
